@@ -21,7 +21,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 encryptedFileCaption = "Page Number(عدد الصفحات) : {}\nkey(مفتاح) 🔐 : ||{}||"
 
-pdfInfoMsg = """`ماذا تريد أن أفعل بهذا الملف.؟ /n What shall i wanted to do with this file.?`
+pdfInfoMsg = """`ماذا تريد أن أفعل بهذا الملف.؟ \n What shall i wanted to do with this file.?`
 
 File name(اسم الملف) : `{}`
 File Size(حجم الملف) : `{}`"""
@@ -52,7 +52,7 @@ async def _encrypt(bot, callbackQuery):
             if int(number_of_pages) >= 5000:
                 await bot.answer_callback_query(
                     callbackQuery.id,
-                    text="`Please send a pdf file less than 5000 pagesالرجاء إرسال ملف pdf أقل من 5000 صفحة` 🙄",
+                    text="`Please send a pdf file less than 5000 pages\nالرجاء إرسال ملف pdf أقل من 5000 صفحة` 🙄",
                     show_alert=True,
                     cache_time=0
                 )
