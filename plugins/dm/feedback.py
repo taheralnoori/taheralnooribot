@@ -28,7 +28,7 @@ ADMINS=Config.ADMINS
 UCantUse = "لا يمكنك استخدام هذا الروبوت لبعض الأسباب 🛑"
 
 
-feedbackMsg = "[feedback|feedback|اكتب تعليقًا 📋 📋](https://t.me/engineering_electrical9/719?comment=1)"
+feedbackMsg = "[feedback |اكتب تعليقًا 📋 ](https://t.me/engineering_electrical9/719?comment=1)"
 
 
 button=InlineKeyboardMarkup(
