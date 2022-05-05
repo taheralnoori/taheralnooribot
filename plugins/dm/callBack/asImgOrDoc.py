@@ -294,7 +294,7 @@ async def _KtoImage(bot, callbackQuery):
                 [
                     [
                         InlineKeyboardButton(
-                            "🖼️صور",
+                            "🖼️ Images صور",
                             callback_data=f"KI|{number_of_pages}"
                         ),
                         InlineKeyboardButton(
@@ -347,7 +347,7 @@ async def _KBTPM(bot, callbackQuery):
             reply_markup = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("⭐ معلومات الصفحة ⭐", callback_data=f"KpdfInfo|{number_of_pages}"),
+                        InlineKeyboardButton("⭐️ معلومات|info", callback_data=f"KpdfInfo|{number_of_pages}"),
                         InlineKeyboardButton("🗳 معاينة | preview🗳", callback_data="Kpreview")
                     ],[
                         InlineKeyboardButton("🖼 الى صور | toImage 🖼", callback_data=f"KtoImage|{number_of_pages}"),
