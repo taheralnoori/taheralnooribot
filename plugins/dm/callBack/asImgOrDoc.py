@@ -48,12 +48,12 @@ pdfReply=InlineKeyboardMarkup(
         ]
     )
 
-BTPMcb = """`ماذا تريد أن أفعل بهذا الملف.؟ /n What shall i wanted to do with this file.?`
+BTPMcb = """`ماذا تريد أن أفعل بهذا الملف.؟ \n What shall i wanted to do with this file.?`
 
 File name(اسم الملف) : `{}`
 File Size(حجم الملف) : `{}`"""
 
-KBTPMcb = """`ماذا تريد أن أفعل بهذا الملف.؟ /n What shall i wanted to do with this file.?`
+KBTPMcb = """`ماذا تريد أن أفعل بهذا الملف.؟ \n What shall i wanted to do with this file.?`
 
 File name(اسم الملف) : `{}`
 File Size(حجم الملف) : `{}`
