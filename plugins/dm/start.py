@@ -49,11 +49,11 @@ forceSubMsg = """انتظر(Wait) [{}](tg://user?id={}) 🤚🏻..!!
 يجيب اولاً انضمام للقناة البوت channel Bot لمتابعة كافة تحديثات البوت 📢 🚶
 هذا يعني أنك بحاجة إلى الانضمام إلى القناة المذكورة أدناه لاستخدامي😁😇!
 ◍ `اضغط على " تحديث ♻️" بعد الانضمام .. 😅😇`
-
 First he answers to join the bot channel to follow all bot updates 📢 🚶
 This means that you need to join the channel mentioned below to use me 😁😇!
 ◍ `Click on “Refresh ♻️” after joining.. 😅😇`
 """
+foolRefresh = "سوف يتم تحديث بوت The bot will be updated 😐😐"
 
 
 aboutDev = """🤖 About Bot(حول البوت)
@@ -130,7 +130,6 @@ Bot channel: @engineering_electrical9
 
 [feedback|اكتب تعليقًا📋](https://t.me/engineering_electrical9/719?comment=1)"""
 
-foolRefresh = "سوف يتم تحديث بوت The bot will be updated 😐😐"
 
 #--------------->
 #--------> config vars
