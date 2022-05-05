@@ -354,7 +354,7 @@ async def _KBTPM(bot, callbackQuery):
                         InlineKeyboardButton("✏️ الى نص totext✏️", callback_data=f"KtoText|{number_of_pages}")
                     ],[
                         InlineKeyboardButton("🔐 تشفير | ENCRYPT 🔐", callback_data=f"Kencrypt|{number_of_pages}"),
-                        InlineKeyboardButton("🔓 🔒 فك تشفير | DECRYPT🔓", callback_data=f"notEncrypted")
+                        InlineKeyboardButton("🔓فك تشفير | DECRYPT🔓", callback_data=f"notEncrypted")
                     ],[
                         InlineKeyboardButton("🗜 ضغط | COMPRESS 🗜", callback_data=f"Kcompress"),
                         InlineKeyboardButton("🤸 إستدارة 🤸", callback_data=f"Krotate|{number_of_pages}")
