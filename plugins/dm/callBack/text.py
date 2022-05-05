@@ -18,7 +18,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 
 
-pdfInfoMsg = """`ماذا تريد أن أفعل بهذا الملف.؟ /n What shall i wanted to do with this file.?`
+pdfInfoMsg = """`ماذا تريد أن أفعل بهذا الملف.؟ \n What shall i wanted to do with this file.?`
 
 File name(اسم الملف) : `{}`
 File Size(حجم الملف) : `{}`
