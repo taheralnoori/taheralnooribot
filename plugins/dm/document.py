@@ -78,9 +78,7 @@ bigFileUnSupport = """Due to Overload(بسبب التحميل الزائد), Own
 
 
 imageAdded = """`تمت إضافة {} صفحة / إلى ملف pdf ..`🤓
-/generate  اضغط لإنشاء ملف PDF 🤞
-`Added {} page/'s to your pdf..`🤓
-/generate to generate PDF 🤞"""
+/generate  اضغط لإنشاء ملف PDF 🤞"""
 
 
 errorEditMsg = """حدث خطأ ما ..😐 Something went wrong..😐
