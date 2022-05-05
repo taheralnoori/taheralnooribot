@@ -402,7 +402,7 @@ async def _splitS(bot, callbackQuery):
                 reply_to_message_id = callbackQuery.message.reply_to_message.message_id,
                 thumb = PDF_THUMBNAIL,
                 document = f"{callbackQuery.message.message_id}/split-split-ملف المقسم.pdf",
-                caption = f"Pages الصفحات : `{newList}`"
+                caption = f"الصفحات : `{newList}`"
             )
             
             await downloadMessage.edit(
@@ -713,7 +713,7 @@ async def _KsplitS(bot, callbackQuery):
                 reply_to_message_id = callbackQuery.message.reply_to_message.message_id,
                 thumb = PDF_THUMBNAIL,
                 document = f"{callbackQuery.message.message_id}/split-ملف المقسم.pdf",
-                caption = f"الصفحاتPages  : `{newList}`"
+                caption = f"الصفحات : `{newList}`"
             )
             
             await downloadMessage.edit(
