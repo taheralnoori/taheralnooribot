@@ -67,7 +67,7 @@ Changelog(التغيير): Telegraph(تليغراف)
 Name(أسم ): Taher Alnoori (طاهر النوري)
 Username(معرف): @ta_ja199 
 Instagram(انستا)🎛:[Click here | إضغط  هنا](https://www.instagram.com/ta_9_ja/)
-Website(موقع)🌐:[Click here | إضغط  هنا](https://electrical-engineer-cc40b.web.app)
+Website(موقع)🌐:موسوعة المهندس الكهربائي
 """
 
 
@@ -211,11 +211,11 @@ async def start(bot, message):
                 [
                     [
                         InlineKeyboardButton(
-                            "📨 About Bot | حول البوت 📨",
+                            "📨 About |حول 📨",
                             callback_data = "strtDevEdt"
                         ),
                         InlineKeyboardButton(
-                            "Explore Bot| استكشف البوت 📮",
+                            "Explore|استكشف📮",
                             callback_data = "exploreBot"
                         )
                     ],
@@ -319,11 +319,11 @@ async def _back(bot, callbackQuery):
                 [
                     [
                         InlineKeyboardButton(
-                            "📨 About Bot | حول البوت 📨",
+                            "📨About |حول📨",
                             callback_data = "strtDevEdt"
                         ),
                         InlineKeyboardButton(
-                            "Explore Bot| استكشف البوت 📮",
+                            "Explore|استكشف📮",
                             callback_data = "exploreBot"
                         )
                     ],
@@ -360,11 +360,11 @@ async def _refresh(bot, callbackQuery):
                 [
                     [
                         InlineKeyboardButton(
-                            "📨 About Bot | حول البوت 📨",
+                            "📨About |حول📨",
                             callback_data = "strtDevEdt"
                         ),
                         InlineKeyboardButton(
-                            "Explore Bot| استكشف البوت 📮",
+                            "Explore|استكشف📮",
                             callback_data = "exploreBot"
                         )
                     ],
