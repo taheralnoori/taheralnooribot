@@ -26,7 +26,6 @@ welcomeMsg = """مرحبا 𝓗𝓲 [{}](tg://user?id={})..!!🌝💛
 ◍ `تحويل الصور إلى PDF`
 ◍ `تحويل ملفات PDF إلى صور`
 ◍ `تحويل الملفات إلى pdf`
-◍ `قم بأرسال ملف pdf  لتعديل عليه`
 ◍ `للمزيد من معلومات اضغط : استكشاف البوت`
 
 Some of the main features are:
@@ -215,7 +214,7 @@ async def start(bot, message):
                             callback_data = "strtDevEdt"
                         ),
                         InlineKeyboardButton(
-                            "Explore|استكشف📮",
+                            "📮Explore|استكشف📮",
                             callback_data = "exploreBot"
                         )
                     ],
@@ -323,7 +322,7 @@ async def _back(bot, callbackQuery):
                             callback_data = "strtDevEdt"
                         ),
                         InlineKeyboardButton(
-                            "Explore|استكشف📮",
+                            "📮Explore|استكشف📮",
                             callback_data = "exploreBot"
                         )
                     ],
@@ -364,7 +363,7 @@ async def _refresh(bot, callbackQuery):
                             callback_data = "strtDevEdt"
                         ),
                         InlineKeyboardButton(
-                            "Explore|استكشف📮",
+                            "📮Explore|استكشف📮",
                             callback_data = "exploreBot"
                         )
                     ],
