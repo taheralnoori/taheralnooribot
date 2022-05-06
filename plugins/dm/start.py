@@ -34,7 +34,8 @@ Some of the main features are:
 ◍ `Convert files to pdf`
 ◍ `For more information, click: Explore Bot`
 
-To measure your Internet speed(لقياس سرعة أنترنيت لديك)📡🗼: /speedtext
+To measure your Internet speed 📡🗼: /speedtext
+لقياس سرعة أنترنيت لديك 📡🗼: /speedtext
 
 𝔇𝔢𝔳&𝔢𝔫𝔤: @ta_ja199 🧑🏻‍💻
 
@@ -49,6 +50,7 @@ forceSubMsg = """انتظر(Wait) [{}](tg://user?id={}) 🤚🏻..!!
 يجيب اولاً انضمام للقناة البوت channel Bot لمتابعة كافة تحديثات البوت 📢 🚶
 هذا يعني أنك بحاجة إلى الانضمام إلى القناة المذكورة أدناه لاستخدامي😁😇!
 ◍ `اضغط على " تحديث ♻️" بعد الانضمام .. 😅😇`
+
 First he answers to join the bot channel to follow all bot updates 📢 🚶
 This means that you need to join the channel mentioned below to use me 😁😇!
 ◍ `Click on “Refresh ♻️” after joining.. 😅😇`
@@ -179,14 +181,14 @@ async def start(bot, message):
                         [
                             [
                                 InlineKeyboardButton(
-                                    "🌟(JOIN CHANNEL)أنظم في القناة🌟",
+                                    "🌟(JOIN CHANNEL) أنظم في القناة🌟",
                                     url = invite_link.invite_link
                                 )
                             ],
                             [
                                 InlineKeyboardButton(
-                                    "تحديث ♻️",
-                                    callback_data = "تحديث (Refresh) ♻️"
+                                    "تحديث |Refresh ♻️",
+                                    callback_data = "refresh"
                                 )
                             ]
                         ]
