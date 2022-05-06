@@ -49,7 +49,7 @@ async def _merge(bot, callbackQuery):
         # CHECK IF BOT DOING ANY WORK
         if callbackQuery.message.chat.id in PROCESS:
             await callbackQuery.answer(
-                "جاري العمل Work in progress .. ⏳"
+                "جاري العمل ..🙇"
             )
             return
         # ADD TO PROCESS
@@ -65,12 +65,12 @@ async def _merge(bot, callbackQuery):
             if len(MERGE[callbackQuery.message.chat.id]) >= 5:
                 await bot.send_message(
                     callbackQuery.message.chat.id,
-                    "_ بسبب التحميل الزائد ، يمكنك فقط دمج 5 ملفات PDF في المرة __\n__Due to Overload you can only merge 5 pdfs at a time__"
+                    "_ بسبب التحميل الزائد ، يمكنك فقط دمج 5 ملفات PDF في المرة __"
                 )
                 nabilanavab = False
                 break
             askPDF = await bot.ask(
-                text = "__MERGE pdfs »إجمالي ملفات PDF في قائمة الانتظار: {} __\n\n/exit __للإلغاء__\n/merge __لدمج__\n __MERGE pdfs » Total pdfs in queue: {}__\n\n/exit __to cancel__\n/merge __to merge__".format(
+                text = "__MERGE pdfs »إجمالي ملفات PDF في قائمة الانتظار: {} __\n\n/exit __للإلغاء__\n/merge __لدمج__".format(
                     len(MERGE[callbackQuery.message.chat.id])
                 ),
                 chat_id = callbackQuery.message.chat.id,
@@ -80,7 +80,7 @@ async def _merge(bot, callbackQuery):
             if askPDF.text == "/exit":
                 await bot.send_message(
                     callbackQuery.message.chat.id,
-                    "`تم إلغاء العملية Process Cancelled ❌..` 😏"
+                    "`تم إلغاء العملية ..` 😏"
                 )
                 PROCESS.remove(callbackQuery.message.chat.id)
                 del MERGE[callbackQuery.message.chat.id]
@@ -104,7 +104,7 @@ async def _merge(bot, callbackQuery):
                     if (MAX_FILE_SIZE and MAX_FILE_SIZE_IN_kiB <= int(size)) or int(size) >= 1800000000:
                         await bot.send_message(
                             callbackQuery.message.chat.id,
-                            f"`بسبب التحميل الزائد ، يدعم فقط ملفات pdf٪ sMb ..Due to Overload Bot Only Support %sMb pdfs`😐"%(MAX_FILE_SIZE if MAX_FILE_SIZE else "1.8Gb")
+                            f"`بسبب التحميل الزائد ، يدعم فقط ملفات pdf٪ sMb ..`😐"%(MAX_FILE_SIZE if MAX_FILE_SIZE else "1.8Gb")
                         )
                         nabilanavab=False
                         break
@@ -126,7 +126,7 @@ async def _merge(bot, callbackQuery):
             # ITERATIONS THROUGH FILE ID'S AND DOWNLOAD
             for iD in MERGE[callbackQuery.message.chat.id]:
                 await downloadMessage.edit(
-                    f"__بدء تنزيل ملف PDF Started Downloading Pdf:{i+1}__"
+                    f"__بدء تنزيل ملف PDF :{i+1}__"
                 )
                 # START DOWNLOAD
                 c_time = time.time()
@@ -144,7 +144,7 @@ async def _merge(bot, callbackQuery):
                 if downloadLoc is None:
                     PROCESS.remove(callbackQuery.message.chat.id)
                     await callbackQuery.message.reply_text(
-                        "`تم إلغاء عملية الدمج  Merge Process Cancelled.... 😏`", quote=True
+                        "`تم إلغاء عملية الدمج .. 😏`", quote=True
                     )
                     shutil.rmtree(f"merge{callbackQuery.message.chat.id}")
                     return
@@ -164,9 +164,9 @@ async def _merge(bot, callbackQuery):
             numbPdf = len(pdfList)
             # MERGING STARTED
             await downloadMessage.edit(
-                "__ بدأ الدمج ..Merging Started.. __ 🪄"
+                "__ بدأ الدمج .. __ 🪄"
             )
-            output_pdf=f"merge{callbackQuery.message.chat.id}/Merging_مدمج.pdf"
+            output_pdf=f"merge{callbackQuery.message.chat.id}/مدمج.pdf"
             #PyPDF 2
             merger = PdfFileMerger()
             for i in pdfList:
@@ -174,7 +174,7 @@ async def _merge(bot, callbackQuery):
             merger.write(output_pdf)
             # STARTED UPLOADING
             await downloadMessage.edit(
-                "`بدأ التحميل (Started Uploading)..`🏋️"
+                "`بدأ التحميل ..`🏋️"
             )
             await bot.send_chat_action(
                 callbackQuery.message.chat.id, "upload_document"
@@ -183,7 +183,7 @@ async def _merge(bot, callbackQuery):
             await bot.send_document(
                 chat_id=callbackQuery.message.chat.id,
                 document=open(output_pdf, "rb"),
-                thumb=PDF_THUMBNAIL, caption="__File Merging_ملف المدمج 🖇__"
+                thumb=PDF_THUMBNAIL, caption="__ملف مدمج pdf__"
             )
             await downloadMessage.delete()
             shutil.rmtree(f"merge{callbackQuery.message.chat.id}")
