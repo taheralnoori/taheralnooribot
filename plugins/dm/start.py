@@ -33,7 +33,6 @@ Some of the main features are:
 ◍ `Convert files to pdf`
 ◍ `For more information, click: Explore Bot`
 
-speed Test Internet(اختبار سرعة النت) 📡🗼: /speedtext
 
  𝔇𝔢𝔳&𝔢𝔫𝔤: @ta_ja199 🧑🏻‍💻
  
@@ -52,7 +51,7 @@ First he answers to join the bot channel to follow all bot updates 📢 🚶
 This means that you need to join the channel mentioned below to use me 😁😇!
 ◍ `Click on “Refresh ♻️” after joining.. 😅😇`
 """
-foolRefresh = "سوف يتم تحديث بوت The bot will be updated 😐😐"
+foolRefresh = "يجيب  عليك إشتراك  أولا  في قناة  بعدها  إضغط تحديث 😁 \n You must first subscribe to a channel, then click Refresh😁"
 
 
 aboutDev = """🤖𝑨𝑩𝑶𝑼𝑻 𝑩𝑶𝑻 (حول البوت)
