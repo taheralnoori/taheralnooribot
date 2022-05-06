@@ -23,31 +23,31 @@ async def toKnown(callbackQuery, number_of_pages):
             reply_markup = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("⭐ معلومات ⭐", callback_data=f"KpdfInfo|{number_of_pages}"),
-                        InlineKeyboardButton("🗳️ معاينة 🗳️", callback_data="Kpreview")
+                        InlineKeyboardButton("⭐️ معلومات|info", callback_data=f"KpdfInfo|{number_of_pages}"),
+                        InlineKeyboardButton("🗳 معاينة | preview🗳", callback_data="Kpreview")
                     ],[
-                        InlineKeyboardButton("🖼️ إلى الصور 🖼️", callback_data=f"KtoImage|{number_of_pages}"),
-                        InlineKeyboardButton("✏️ الى نص ✏️", callback_data=f"KtoText|{number_of_pages}")
+                        InlineKeyboardButton("🖼 الى صور | toImage 🖼", callback_data=f"KtoImage|{number_of_pages}"),
+                        InlineKeyboardButton("✏️ الى نص totext✏️", callback_data=f"KtoText|{number_of_pages}")
                     ],[
-                        InlineKeyboardButton("🔐 تشفير 🔐", callback_data=f"Kencrypt|{number_of_pages}"),
-                        InlineKeyboardButton("🔓 فك تشفير 🔓", callback_data=f"notEncrypted")
+                        InlineKeyboardButton("🔐 تشفير | ENCRYPT 🔐", callback_data=f"Kencrypt|{number_of_pages}"),
+                        InlineKeyboardButton("🔓فك تشفير | DECRYPT🔓", callback_data=f"notEncrypted")
                     ],[
-                        InlineKeyboardButton("🗜️ ضغط 🗜️", callback_data=f"Kcompress"),
-                        InlineKeyboardButton("🤸 استدارة 🤸", callback_data=f"Krotate|{number_of_pages}")
+                        InlineKeyboardButton("🗜 ضغط | COMPRESS 🗜", callback_data=f"Kcompress"),
+                        InlineKeyboardButton("🤸 إستدارة 🤸", callback_data=f"Krotate|{number_of_pages}")
                     ],[
-                        InlineKeyboardButton("✂️ تقسيم ✂️", callback_data=f"Ksplit|{number_of_pages}"),
-                        InlineKeyboardButton("🧬 دمج 🧬",callback_data="merge")
+                        InlineKeyboardButton("✂️ تقسيم | SPLIT  ✂️", callback_data=f"Ksplit|{number_of_pages}"),
+                        InlineKeyboardButton("🧬 دمج | MERGE  🧬", callback_data="merge")
                     ],[
-                        InlineKeyboardButton("™️ ️ختم ™️",callback_data=f"Kstamp|{number_of_pages}"),
-                        InlineKeyboardButton("✏️ إعادة تسمية ✏️",callback_data="rename")
+                        InlineKeyboardButton("™️ ختم STAMP ™️", callback_data=f"Kstamp|{number_of_pages}"),
+                        InlineKeyboardButton("✏️ إعادة تسمية |RENAME ✏️", callback_data="rename")
                     ],[
-                        InlineKeyboardButton("📝 مسح ضوئي 📝", callback_data=f"Kocr|{number_of_pages}"),
-                        InlineKeyboardButton("🥷 A4 تنسيق 🥷", callback_data=f"Kformat|{number_of_pages}")
+                        InlineKeyboardButton("📝 مسح ضوئي | OCR 📝", callback_data=f"Kocr|{number_of_pages}"),
+                        InlineKeyboardButton("🥷A4 FORMAT | تنسيق 🥷", callback_data=f"Kformat|{number_of_pages}")
                     ],[
                         InlineKeyboardButton("🤐 ZIP 🤐", callback_data=f"Kzip|{number_of_pages}"),
                         InlineKeyboardButton("🎯 TAR 🎯", callback_data=f"Ktar|{number_of_pages}")
-                    ],[                                       
-                        InlineKeyboardButton("🚫 أغلق 🚫", callback_data="closeALL")
+                    ],[
+                        InlineKeyboardButton("🚫 أغلق | CLOSE  🚫", callback_data="closeALL")
                     ]
                 ]
             )
