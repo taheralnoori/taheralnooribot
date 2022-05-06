@@ -38,7 +38,7 @@ async def text(bot, message):
         await bot.send_photo(
             chat_id=chat_id,
             photo=file_name,
-            caption="تم تحويل النص الى خط يد ✍🏻\nThe text has been converted to handwriting ✍\n بواسطة (by): @i2pdfbot"
+            caption="تم تحويل النص الى خط يد ✍🏻\nConverte Text to Handwriting ✍\n بواسطة (by): @i2pdfbot"
         )
         await txt.delete()
         os.remove(file_name)
