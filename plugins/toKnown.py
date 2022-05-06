@@ -5,20 +5,10 @@ from pyrogram.types import Message
 from plugins.fileSize import get_size_format as gSF
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-#--------------->
-#--------> LOCAL VARIABLES
-#------------------->
+pdfInfoMsg = """`ماذا تريد أن أفعل بهذا الملف.؟ \n What shall i wanted to do with this file.?`
+File name(اسم الملف) : `{}`
+File Size(حجم الملف) : `{}`"""
 
-pdfInfoMsg = """`ماذا أريد أن أفعل بهذا الملف.؟`
-
-File Name(اسم الملف : `{}`
-File Size(حجم الملف) : `{}`
-
-`عدد الصفحات: {}`✌️"""
-
-#--------------->
-#--------> EDIT CHECKPDF MESSAGE (IF PDF & NOT ENCRYPTED)
-#------------------->
 
 # convert unknown to known page number msgs
 async def toKnown(callbackQuery, number_of_pages):
