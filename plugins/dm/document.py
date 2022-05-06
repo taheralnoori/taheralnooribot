@@ -185,9 +185,9 @@ async def documents(bot, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("🌟(JOIN CHANNEL)أنظم في القناة🌟", url=invite_link.invite_link)
+                                InlineKeyboardButton("🌟(JOIN CHANNEL) أنظم في القناة🌟", url=invite_link.invite_link)
                             ],[
-                                InlineKeyboardButton("تحديث (Refresh) ♻️", callback_data="refresh")
+                                InlineKeyboardButton("تحديث | Refresh ♻️", callback_data="refresh")
                             ]
                         ]
                     )
