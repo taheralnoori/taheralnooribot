@@ -34,12 +34,11 @@ Some of the main features are:
 ◍ `Convert files to pdf`
 ◍ `For more information, click: Explore Bot`
 
-To measure your Internet speed 📡🗼: /speedtext
-لقياس سرعة أنترنيت لديك 📡🗼: /speedtext
+speed Test Internet(اختبار سرعة النت) 📡🗼: /speedtext
+
 
 𝔇𝔢𝔳&𝔢𝔫𝔤: @ta_ja199 🧑🏻‍💻
 
-[🌟 Rate : تقييم 🌟](https://t.me/tlgrmcbot?start=i2pdfbot)
 [feedback|اكتب تعليقًا 📋 ](https://t.me/engineering_electrical9/719?comment=1)"""
 
 
@@ -58,14 +57,14 @@ This means that you need to join the channel mentioned below to use me 😁😇!
 foolRefresh = "سوف يتم تحديث بوت The bot will be updated 😐😐"
 
 
-aboutDev = """🤖 About Bot(حول البوت)
+aboutDev = """🤖𝑨𝑩𝑶𝑼𝑻 𝑩𝑶𝑻 (حول البوت)
 Name(أسم): pdf pro | تعديل على pdf
 Username(معرف): @i2pdfbot
 Version(إلإصدار): 2.5
 Changelog(التغيير): Telegraph(تليغراف)
 
 👤 Developer(المطور)
-Name(أسم ): Taher Alnoori (طاهر النوري)
+Name(أسم ): 𝗧𝗔𝗛𝗘𝗥 𝗔𝗟𝗡𝗢𝗢𝗥𝗜
 Username(معرف): @ta_ja199 
 Instagram(انستا)🎛:[Click here | إضغط  هنا](https://www.instagram.com/ta_9_ja/)
 Website(موقع)🌐:موسوعة المهندس الكهربائي
@@ -99,7 +98,7 @@ exploreBotEdit = """بعض الميزات الرئيسية هي:
 ◍ `تحويل النص الى خط يد`
 
 مطور البوت: @ta_ja199
-قناة البوت channel Bot :@engineering_electrical9
+قناة البوت channel Bot :@i2pdfbotchannel
 
 Some of the main features are:
 ◍ `Convert Images to PDF`
@@ -128,7 +127,7 @@ Modify the pdf file:
 ◍ `Convert text to handwriting`
 
 Bot Developer: @ta_ja199
-Bot channel: @engineering_electrical9
+Bot channel: @i2pdfbotchannel
 
 [feedback|اكتب تعليقًا📋](https://t.me/engineering_electrical9/719?comment=1)"""
 
@@ -265,7 +264,13 @@ async def _strtDevEdt(bot, callbackQuery):
                             callback_data = "back"
                         )
                     ],
-                    [
+                          [
+                        InlineKeyboardButton(
+                            "🌟 Rate : تقييم 🌟",
+                            url ="https://t.me/tlgrmcbot?start=i2pdfbot"
+                        )
+                    ],                  
+                        [
                         InlineKeyboardButton(
                             "🚫 أغلق | CLOSE  🚫",
                             callback_data = "close"
@@ -292,7 +297,13 @@ async def _exploreBot(bot, callbackQuery):
                             callback_data = "back"
                         )
                     ],
-                    [
+                          [
+                        InlineKeyboardButton(
+                            "🌟 Rate : تقييم 🌟",
+                            url ="https://t.me/tlgrmcbot?start=i2pdfbot"
+                        )
+                    ],                  
+                        [
                         InlineKeyboardButton(
                             "🚫 أغلق | CLOSE  🚫",
                             callback_data = "close"
