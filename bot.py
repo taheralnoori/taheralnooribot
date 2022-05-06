@@ -14,15 +14,15 @@ else:
     from config import Config
 
 # -------------------------- Bot Configuration ---------------------------------------------- #
-Bot = Client(
-    "link2PdfBot",
+bot = Client(
+    "ILovePDF",
     bot_token=Config.TG_BOT_TOKEN,
     api_id=Config.APP_ID,
     api_hash=Config.API_HASH,
 )
 
 # -------------------------------- Main execution fn --------------------------------------- #
-@Bot.on_message(filters.private & filters.text)
+@bot.on_message(filters.private & filters.text)
 async def link_extract(self, m: Message):
     if not m.text.startswith("http"):
         return
@@ -71,4 +71,4 @@ async def link_extract(self, m: Message):
         pass
     await msg.delete()
 print(f"\n\nبدأ البوت بنجاح!\n\n")
-Bot.run()
+bot.run()
