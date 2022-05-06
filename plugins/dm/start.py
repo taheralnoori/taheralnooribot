@@ -27,7 +27,6 @@ welcomeMsg = """مرحبا 𝓗𝓲 [{}](tg://user?id={})..!!🌝💛
 ◍ `تحويل ملفات PDF إلى صور`
 ◍ `تحويل الملفات إلى pdf`
 ◍ `للمزيد من معلومات اضغط : استكشاف البوت`
-
 Some of the main features are:
 ◍ `Convert images to PDF`
 ◍ `Convert PDF to images`
@@ -36,9 +35,8 @@ Some of the main features are:
 
 speed Test Internet(اختبار سرعة النت) 📡🗼: /speedtext
 
-
-𝔇𝔢𝔳&𝔢𝔫𝔤: @ta_ja199 🧑🏻‍💻
-
+ 𝔇𝔢𝔳&𝔢𝔫𝔤: @ta_ja199 🧑🏻‍💻
+ 
 [feedback|اكتب تعليقًا 📋 ](https://t.me/engineering_electrical9/719?comment=1)"""
 
 
